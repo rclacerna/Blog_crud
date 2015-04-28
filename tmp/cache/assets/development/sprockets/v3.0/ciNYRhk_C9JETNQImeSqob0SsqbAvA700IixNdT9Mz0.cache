@@ -1,0 +1,49 @@
+{:uriI"¦file:///Users/Ryan/my_travel_app/app/assets/javascripts/angular/views/myplaces.html?type=text/html&id=8e591bede59832df90fcb1c1b2c7b9a01ef562f4ac51de2dd086e43378fa9909:ET:load_pathI"5/Users/Ryan/my_travel_app/app/assets/javascripts;F:filenameI"Q/Users/Ryan/my_travel_app/app/assets/javascripts/angular/views/myplaces.html;T:	nameI"angular/views/myplaces;T:logical_pathI" angular/views/myplaces.html;T:content_typeI"text/html;T:sourceI"
+<!--&lt;!&ndash;View for bookmarked places&ndash;&gt;-->
+<!--<div>-->
+    <!--<div data-ng-show="myPlaces || myPlaces.length > 0">-->
+        <!--<div>-->
+            <!--<h3>Bookmarked places for user: <span class="text-warning">{{myPlaces[0].userName}}</span></h3>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<table class="table table-striped table-bordered table-hover table-condensed">-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th>Place Name</th>-->
+            <!--<th>Category</th>-->
+            <!--<th>Address</th>-->
+            <!--<th>Rating</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr data-ng-hide="myPlaces || myPlaces.length > 0">-->
+            <!--<td colspan="4">-->
+                <!--<div class="text-center text-warning"><strong>No bookmarked places found, Explore Foursquare and Bookmark Some Places!</strong></div>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr data-ng-repeat="place in myPlaces">-->
+            <!--<td>-->
+                <!--<a target="_blank" data-ng-href="https://foursquare.com/v/{{place.venueID}}">{{ place.venueName }}</a>-->
+            <!--</td>-->
+            <!--<td>{{ place.category }}-->
+            <!--</td>-->
+            <!--<td>{{ place.address }}-->
+            <!--</td>-->
+            <!--<td><span class="badge">{{ place.rating | number:1 }}</span>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+    <!--</table>-->
+    <!--<div class="pull-right" data-ng-show="totalRecordsCount > 0">-->
+        <!--<div>-->
+            <!--<div data-pagination="" data-previous-text="<" data-next-text=">" data-first-text="<<" data-last-text=">>"-->
+                 <!--data-on-select-page="pageChanged(page)" data-total-items="totalRecordsCount" data-page="currentPage"-->
+                 <!--data-boundary-links="true" class="pagination pagination-sm" data-max-size="5" data-rotate="false" data-items-per-page="10">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"_file-digest:///Users/Ryan/my_travel_app/app/assets/javascripts/angular/views/myplaces.html;TT:charsetI"
+utf-8;F:digest"%ßH ­Í»?teÝŒîSøh™o¨`‹¢-…NN±”:lengthi:integrityI"Kni:///sha-256;30ggf63NDrs_dGXdjO5T-GgImW-oYIuiLYUTTk6xlJ0?ct=text/html;T:dependencies_digest"%Þù•¬uùÜ\­4èuÜN“`q°ÃÄSgV|å:idI"E8e591bede59832df90fcb1c1b2c7b9a01ef562f4ac51de2dd086e43378fa9909;F:
+mtimel+BG>U
