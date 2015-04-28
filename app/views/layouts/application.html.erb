@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang ="en" class="no-js" ng-app="FoursquareApp">
+<head>
+  <title>Travel App</title>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/assets/bootstrap-theme/css/bootstrap.min.css" rel="stylesheet" /> <!--bootstrap-theme file-->
+  <link href="/assets/bootstrap-theme/css/styles.css" rel="stylesheet" /> <!--bootstrap-theme file-->
+  <link href="assets/toaster.css" rel="stylesheet" />
+  <!--<link href="assets/loading-bar.min.css" rel="stylesheet" />-->
+  <!--weather app dependencies-->
+  <link rel="stylesheet" href="assets/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+  <!--menu style-->
+  <link rel="stylesheet" type="text/css" href="assets/style3.css">
+
+</head>
+<body>
+
+<!--<div class="wrapper">-->
+<div class="box">
+  <div class="row">
+    <!-- sidebar -->
+    <div class="column col-sm-3">
+
+      <ul class="mh-menu">
+        <li><a href="#/home"><span>Homepage</span> <span>Home</span></a><img ></li>
+        <li><a href="#/explore"><span>Find attractions</span> <span>Explore</span></a><img ></li>
+        <li><a href="#/weather"><span>Check the weather</span> <span>Weather</span></a><img ></li>
+        <li><a href="#/blog"><span>Blog your adventures</span> <span>Blogs</span></a><img></li>
+      </ul>
+
+      <ul class="nav hidden-xs" id="sidebar-footer">
+        <li>
+          <a href="https://twitter.com/Kaloyyy"><h3>The creator</h3>Made with <i class="glyphicon glyphicon-heart-empty"></i> by Ryan Lacerna</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /sidebar -->
+
+    <!-- main -->
+    <div class="column col-sm-9" id="main">
+      <!--<div class="padding">-->
+      <!--<div class="container">-->
+      <!--<div ng-controller="AppController">-->
+      <div class="view-animate-container">
+        <div data-ng-view=""></div>
+      </div>
+      <!--</div>-->
+      <!--</div>-->
+      <hr>
+      <!--</div>-->
+    </div>
+    <!-- /main -->
+
+
+  </div>
+</div>
+<!--</div>-->
+<!-- script references -->
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>-->
+<!--<script src="assets/angular/assets/scripts/jquery-1.11.0.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+<!--<script src="/assets/angularExternal/angular.min.js"></script>-->
+<!--<script src="/assets/angularExternal/angular-route.js"></script>-->
+<!--<script src="/assets/angularExternal/angular-resource.min.js"></script>-->
+<!--<script src="/assets/angular/controllers/blog_controller.js"></script>-->
+<!---->
+ <!--3rd party libraries -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
+<!---->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap-tpls.min.js"></script>
+
+<script type="text/javascript" src="assets/angular/assets/scripts/toaster.js"></script>
+<!--<script type="text/javascript" src="assets/angular/assets/scripts/loading-bar.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.9/toaster.min.js"></script>
+<!-- Load app main script -->
+<script type="text/javascript" src="assets/angular/app.js"></script>
+<script src="/assets/angular/controllers/blog_controller.js"></script>
+
+<!-- Load controllers -->
+<script type="text/javascript" src="assets/angular/controllers/placesExplorerController.js"></script>
+<!--controller for photos -->
+<script type="text/javascript" src="assets/angular/controllers/placesPhotosController.js"></script>
+
+<script type="text/javascript" src="assets/angular/controllers/myPlacesController.js"></script>
+
+<!--<script type="text/javascript" src="controllers/userContextController.js"></script>-->
+
+<!--calls photos from foursquare -->
+<script type="text/javascript" src="assets/angular/services/placesPhotosService.js"></script>
+<!--responsible to send HTTP requests to Foursquare explore places API-->
+<script type="text/javascript" src="assets/angular/services/placesExplorerService.js"></script>
+
+<script type="text/javascript" src="assets/angular/services/placesDataService.js"></script>
+
+<!---custom filter-->
+<script type="text/javascript" src="assets/angular/filters/placeNameCategoryFilter.js"></script>
+
+<!--testing a new bootstrap theme-->
+<!--<script type="text/javascript" src="assets/bootstrap-theme/js/bootstrap.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/angular/assets/scripts/jquery-1.11.2.min.js"></script>-->
+
+<!-- weather app dependencies -->
+<script src="assets/angular/assets/scripts/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+<script src="assets/angular/assets/scripts/bootstrap.min.js"></script>
+<!--<script src="assets/angularExternal/angular.min.js"></script>-->
+<!--<script src="assets/angularExternal/angular-route.min.js"></script>-->
+
+<!--<script src="assets/angularExternal/angular-animate.min.js"></script>-->
+<script src="assets/angular/assets/scripts/moment.min.js"></script>
+<script src="assets/angular/controllers/main.js"></script>
+
+
+

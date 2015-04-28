@@ -1,0 +1,28 @@
+<br/>
+<div class="row">
+    <div class="col-md-12">
+        <a class="btn btn-primary" href="#/blogs/new">Create a blog</a>
+        <h2 class="block" style="text-align: center;">Blogs</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th></th>
+            </tr>
+            <tr data-ng-hide="blogs.length" >
+                <td colspan="5">No blogs found, Please create one.</td>
+            </tr>
+            <tr data-ng-show="blogs.length" data-ng-repeat="blog in blogs">
+                <td>{{blog.firstname}}</td>
+                <td>{{blog.lastname}}</td>
+                <td>{{blog.title}}</td>
+                <td>{{blog.content}}</td>
+                <td>
+                    <a href="#/blogs/{{blog.id}}/edit">Edit</a> | <a href="" data-ng-click="deleteBlog(blog.id)">Remove</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div> 

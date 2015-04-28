@@ -1,0 +1,67 @@
+<form>
+<div class="form-group" data-ng-class="{'has-error' : submitted && blogForm.firstname.$invalid}">
+    <label class="control-label col-md-3">First name <span class="required">* </span> </label>
+    <div class="col-md-4">
+        <input type="text" name="firstname" style="width: 500px;"class="form-control" data-ng-model="blog.firstname" required placeholder="first name"/>
+    </div>
+    <p data-ng-show=" submitted && blogForm.firstname.$invalid" class="help-block">First name is required.</p>
+</div>
+<div class="form-group" data-ng-class="{'has-error' : submitted && blogForm.lastname.$invalid}">
+    <label class="control-label col-md-3">Last name <span class="required">* </span> </label>
+    <div class="col-md-4">
+        <input type="text" name="lastname" style="width: 500px;"class="form-control" data-ng-model="blog.lastname" required placeholder="last name"/>
+    </div>
+    <p data-ng-show=" submitted && blogForm.lastname.$invalid"  class="help-block">Last name is required.</p>
+</div>
+
+
+
+<div class="form-group" data-ng-class="{'has-error' : submitted && blogForm.title.$invalid}">
+    <label class="control-label col-md-3">Blog title <span class="required">* </span> </label>
+    <div class="col-md-4">
+        <input type="text" style="width: 500px;" name="title" class="form-control" data-ng-model="blog.title" required placeholder="Blog title" title/>
+    </div>
+
+    <p data-ng-show=" submitted && blogForm.title.$invalid" class="help-block">Title is required.</p>
+</div>
+
+<div class="form-group" data-ng-class="{'has-error' : submitted && blogForm.content.$invalid}">
+    <label class="control-label col-md-3">Content <span class="required">* </span> </label>
+    <div class="col-md-4">
+        <!--<input type="text" style="height: 400px; width: 500px;" name="content" class="form-control" data-ng-model="blog.content" required placeholder="content"/>-->
+        <textarea type="text" style="height: 290px; width: 500px;" name="content" class="form-control" data-ng-model="blog.content" required placeholder="content"></textarea>
+    </div>
+    <p data-ng-show=" submitted && blogForm.content.$invalid" class="help-block">Content is required.</p>
+</div>
+
+
+
+<!--<div class="form-group" ng-class="{'has-error' : submitted && blogForm.email.$invalid}">-->
+    <!--<label class="control-label col-md-3">Email <span class="required">* </span> </label>-->
+    <!--<div class="col-md-4">-->
+        <!--<input type="email" name="email" class="form-control" ng-model="blog.title" required placeholder="test@example.com"/>-->
+    <!--</div>-->
+    <!--<p ng-show="submitted && blogForm.email.$error.required" class="help-block">Email is required.</p>-->
+    <!--<p ng-show="submitted && blogForm.email.$error.email" class="help-block">Enter valid email</p>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+    <!--<label class="control-label col-md-3">Student Number </label>-->
+    <!--<div class="col-md-4">-->
+        <!--<input type="text" name="student_num" class="form-control" ng-model="student.student_num" placeholder="9876543210"/>-->
+    <!--</div>-->
+    <!--<p ng-show="submitted && studentForm.student_num.$invalid" class="help-block">student Number is required.</p>-->
+<!--</div>-->
+
+
+
+<div class="form-group">
+    <!--<div class="pull-left">-->
+        <!--<a class="btn btn-danger pull-right" href="/"> Back</a>-->
+    <a class="btn btn-danger pull-right" href="#/blogs">Cancel</a>
+
+    <button type="submit" class="btn btn-primary pull-right" ng-click="submitted=true">Submit</button>
+    <!--<button clas="btn btn-primary" ng-click="createPost()">Create</button>-->
+    <!--<button class="btn btn-danger pull-right" ng-click="clearPost()">Clear post</button>-->
+    <!--</div>-->
+</div>
+</form>
