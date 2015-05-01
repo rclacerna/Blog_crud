@@ -1,7 +1,9 @@
 /**
- * Created by Ryan on 11/04/15.
+ * Created by Ryan on 20/04/15.
  */
 // custome filter
+
+
 app.filter("placeNameCategoryFilter", function () {
     return function (places, filterValue) {
         if (!filterValue) return places;
@@ -19,3 +21,4 @@ app.filter("placeNameCategoryFilter", function () {
         return matches;
     };
 });
+

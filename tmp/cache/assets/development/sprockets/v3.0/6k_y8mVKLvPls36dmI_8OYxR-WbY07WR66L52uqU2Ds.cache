@@ -1,0 +1,13 @@
+{:uriI"file:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html?type=text/html&id=4e757439960fddd6603c5192822d509f9ea4e386766ec33f525ec6e48a9ddae0:ET:load_pathI"ò/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts;F:filenameI"∞/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html;T:	nameI"angular/views/home;T:logical_pathI"angular/views/home.html;T:content_typeI"text/html;T:sourceI"J<div class="container" ng-init="successHtml()">
+    <h3>Types of notifications</h3>
+    <div class="btn-group-vertical">
+        <button class="btn btn-primary" ng-click="primary()">Primary Notification</button>
+        <button class="btn btn-danger" ng-click="error()">Error Notification</button>
+        <button class="btn btn-success" ng-click="success()">Success Notification</button>
+        <button class="btn btn-info" ng-click="info()">Information Notification</button>
+        <button class="btn btn-warning" ng-click="warning()">Warning Notification</button>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"»file-digest:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html;TT:charsetI"
+utf-8;F:digest"%ZïH§‰ﬂÜ'éá îéß¨›≠è[ÁMù—UòØ‰ªJ:lengthiJ:integrityI"Kni:///sha-256;WpVIpOTfhieOhyCUjqes3a2PW-dNndFVmBAQr-QGu0o?ct=text/html;T:dependencies_digest"%Ó∑ºë«‘ˆ˙9Aƒ–ª=˘&ªå#Öp%E8·Êâ—;:idI"E4e757439960fddd6603c5192822d509f9ea4e386766ec33f525ec6e48a9ddae0;F:
+mtimel+˘Ù@U

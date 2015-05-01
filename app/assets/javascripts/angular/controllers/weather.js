@@ -20,7 +20,7 @@ weatherControllers.controller("AppController", ['$route', '$routeParams', '$loca
 weatherControllers.controller("GetWeatherCtrl", ['$scope', 'weatherApi',
   function($scope, weatherApi) {
     $scope.currentTime = moment().format('h:mm a');
-    weatherApi.getLocation().then(function(res) {            
+    weatherApi.getLocation().then(function(res) {
       weatherApi.getWeeklyWeather(res.data.city+","+res.data.country_code).then(function(response) {
         $scope.data = response.data;
         if ($scope.data.list.length) {
@@ -47,7 +47,7 @@ weatherServices.factory('weatherApi', ['myHttp',
       getLocation: function() {
         return myHttp.jsonp("http://muslimsalat.com/daily.json?callback=JSON_CALLBACK");
       },
-      getWeeklyWeather: function(city) {        
+      getWeeklyWeather: function(city) {
         return myHttp.get('http://api.openweathermap.org/data/2.5/forecast/daily?q='+city+'&mode=json&units=metric');
       }
     }
@@ -84,6 +84,6 @@ weatherServices.factory('myCache', function($cacheFactory) {
   });
 });
 
-function JSON_CALLBACK(){
-  // Nothing
-}
+//function JSON_CALLBACK(){
+//  // Nothing
+//}

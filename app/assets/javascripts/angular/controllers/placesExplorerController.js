@@ -36,7 +36,6 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
     function getPlaces() {
 
         var offset = ($scope.pageSize) * ($scope.currentPage - 1);
-
         /*
          * we can pass any number of arguments to the get method,
          * and all those arguments (i.e. near, query, limit, etc..)
@@ -52,18 +51,18 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
             else {
                 $scope.places = [];
                 $scope.totalRecordsCount = 0;
+                $scope.error();
             }
         });
     }
 
     function filterPlaces(filterInput) {
-        //using the custom filter from /filters/placeNameCategoryFilter.js
+        // using the custom filter from /filters/placeNameCategoryFilter.js
         $scope.filteredPlaces = $filter("placeNameCategoryFilter")($scope.places, filterInput);
         $scope.filteredPlacesCount = $scope.filteredPlaces.length;
     }
 
     function createWatche() {
-
         /*
          * listener for on the “filterValue” attribute of the scope,
          * this listener gets fired when the value of this attribute
@@ -75,7 +74,6 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
     }
     // “doSearch()” which will be called on the explore button click
     $scope.doSearch = function () {
-
         $scope.currentPage = 1;
         getPlaces();
     };
@@ -90,11 +88,13 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
         getPlaces();
     };
 
+
+
+
 // show categories of photos from a venue
     $scope.showVenuePhotos = function (venueId, venueName) {
 
         placesPhotosService.get({ venueId: venueId }, function (photosResult) {
-
             var modalInstance = $modal.open({ //$modal service from Angular UI bootstrap
                 templateUrl: '/assets/angular/views/placesphotos.html',
                 controller: 'placesPhotosController',
@@ -107,16 +107,12 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
                     }
                 }
             });
-
             modalInstance.result.then(function () {
                 //$scope.selected = selectedItem;
             }, function () {
                 //alert('Modal dismissed at: ' + new Date());
             });
-
         });
-
-
     };
 
     /*
@@ -127,18 +123,17 @@ app.controller('placesExplorerController', function ($scope, placesExplorerServi
 
         return icon.prefix + '44' + icon.suffix;
     };
-
     $scope.buildVenueThumbnail = function (photo) {
-
         return photo.items[0].prefix + '128x128' + photo.items[0].suffix;
     };
-
 });
+
+
 
 $(document).ready(function(){
 
     $(window).scroll(function(e){
-       var el = $('.fixedElement');
+        var el = $('.fixedElement');
         if ($(this).scrollTop() > 200 && el.css('position') != 'fixed'){
             $('.fixedElement').css({'position': 'fixed', 'top': '0px'});
         }

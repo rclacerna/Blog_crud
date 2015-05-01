@@ -6,7 +6,6 @@
 * */
 
 'use strict';
-
 var requestParms = {
     clientId: "UF2YRKCGJHHOVUY5T0MBETLPQLGQDOCRSYA51U4VXHKOJUWM",
     clientSecret: "J25KDXHPNCO450HNNNDPHU1B2F0LPN0J2YWM2VCXSY21ZO3F",
@@ -29,5 +28,5 @@ app.factory('placesPhotosService', function ($resource) {
         {
             get: { method: 'JSONP' }
         });
-
 });
+

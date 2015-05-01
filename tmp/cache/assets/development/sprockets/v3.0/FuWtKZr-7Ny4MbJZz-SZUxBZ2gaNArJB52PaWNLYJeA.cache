@@ -1,0 +1,72 @@
+{:uriI"file:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/weather.html?type=text/html&id=4173faebe1bc7ae896712256e07e16b2c5d70995db3bb4a2af44b300f31c0f3d:ET:load_pathI"˜/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts;F:filenameI"³/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/weather.html;T:	nameI"angular/views/weather;T:logical_pathI"angular/views/weather.html;T:content_typeI"text/html;T:sourceI"ƒ
+<style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px;  padding: 1em;  font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
+    .newClass { text-indent: 10px; letter-spacing: .4em; width: 100px; height: 150px; padding: 3px; margin: 5px; font-size: 1.6em; }
+</style>
+
+<div ng-init ="weather_notification()" class="container" style="margin-top: 40px;">
+  <div class="row">
+    <div class="col-xs-12 bg">
+      <div class="pull-left">
+        <h3 class="">{{data.city.name}}, {{data.city.country}}</h3>
+        <h4>{{data.city.coord.lat | number:4 }}, {{data.city.coord.lon | number:4 }}</h4>
+      </div>
+      <div class="pull-right text-center">
+        <br />
+        <img src="/assets/clock.png" width="48" alt="Location" />
+        <br />
+        {{ currentTime }}
+      </div>
+    </div>
+  </div>
+    <button id="button">Run effect</button>
+
+  <div class="row">    
+  <div class="col-xs-2 weather-days today" ng-repeat="day in data.list | filter:!dt.today">
+      <h3>{{ day.dt.day  }}</h3>
+      <span class="temp-title">
+        {{ day.temp.day}}&deg;
+      </span><br /><br />
+      <span class="speed">
+        {{ day.speed }} km/h
+      </span>      
+    </div>
+    <div class="col-xs-10">
+      <div class="row">    
+        <div id="small"class="weather-days col-xs-12 col-md-2" ng-repeat="day in data.list" ng-show="!day.dt.today">
+          <div>
+            <span class="badge">
+              {{ day.dt.day  }}
+            </span><br />
+            <span class="temp-title">
+              {{ day.temp.day}}&deg;
+            </span><br />
+            <span class="speed">
+              {{ day.speed }} km/h
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    $(function() {
+        $( "#button" ).click(function() {
+            $( ".weather-days" ).addClass( "newClass", 1000, callback );
+        });
+
+        function callback() {
+            setTimeout(function() {
+                $( ".weather-days" ).removeClass( "newClass" );
+            }, 10000 );
+        }
+    });
+</script>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"Ëfile-digest:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/weather.html;TT:charsetI"
+utf-8;F:digest"%“€öö0Ó	ÂÀ8|(wüTàô<%a.ø|J$læ¹ò¥:lengthiƒ:integrityI"Kni:///sha-256;k4AO9vYw0wnCwDh8KHf8VOD0PCVhLvh8SiRsDOa58qU?ct=text/html;T:dependencies_digest"%!z°ŽTÓÈØwª­#¹A+ð::Œ®XïÆÜH§|Ô–:idI"E4173faebe1bc7ae896712256e07e16b2c5d70995db3bb4a2af44b300f31c0f3d;F:
+mtimel+¼NAU

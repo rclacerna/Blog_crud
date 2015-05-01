@@ -1,0 +1,20 @@
+{:uriI"file:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/placesphotos.html?type=text/html&id=ea23149d0a3db27d5bae90dc13e1ee31cd43fd8fe001d913babff3f70df03378:ET:load_pathI"ò/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts;F:filenameI"∏/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/placesphotos.html;T:	nameI"angular/views/placesphotos;T:logical_pathI"$angular/views/placesphotos.html;T:content_typeI"text/html;T:sourceI"›<div class="modal-header">
+    <a href="" class="close" data-ng-click="close()">&times;</a>
+    <h4>{{venueName}}</h4>
+</div>
+<div class="modal-body">
+    <div>
+        <div class="row">
+            <div data-ng-repeat="photo in venuePhotos">
+                <div class="col-xs-4 photoCaption">
+                    <img rel="lightbox" data-ng-src="{{buildVenuePhoto(photo)}}" class="img-thumbnail" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"–file-digest:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/placesphotos.html;TT:charsetI"
+utf-8;F:digest"%†#w¨Ò§÷9Ò8ŸMkmßo‘—Î˝%æ√JíÑ≥!:lengthi›:integrityI"Kni:///sha-256;oCN3rPGk1jnxONlNCGttp2_U0QJ_6_0lvsNKkoSzIQM?ct=text/html;T:dependencies_digest"%πCj\LNHìg„»*ó†nyõ§>pêQ·º“ˆò:idI"Eea23149d0a3db27d5bae90dc13e1ee31cd43fd8fe001d913babff3f70df03378;F:
+mtimel+ÃAU

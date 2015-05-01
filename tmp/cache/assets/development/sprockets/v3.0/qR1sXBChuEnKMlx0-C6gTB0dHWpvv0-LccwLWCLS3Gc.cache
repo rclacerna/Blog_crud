@@ -1,0 +1,15 @@
+{:uriI"file:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html?type=text/html&id=adac7da9a0ed8aaddd73bcf19f8c7de854f5189c756a9112194c32fe52061bb3:ET:load_pathI"ò/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts;F:filenameI"∞/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html;T:	nameI"angular/views/home;T:logical_pathI"angular/views/home.html;T:content_typeI"text/html;T:sourceI"2<div class="container">
+    <h3>Types of notifications</h3>
+    <div class="btn-group-vertical">
+        <button class="btn btn-primary" ng-click="primary()">Primary Notification</button>
+        <button class="btn btn-danger" ng-click="error()">Error Notification</button>
+        <button class="btn btn-success" ng-click="success()">Success Notification</button>
+        <button class="btn btn-info" ng-click="info()">Information Notification</button>
+        <button class="btn btn-warning" ng-click="warning()">Warning Notification</button>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"»file-digest:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html;TT:charsetI"
+utf-8;F:digest"%§;U)^öõÍ°usgÔ¶öπCíµØ/dªCä˛[Oã:lengthi2:integrityI"Kni:///sha-256;pDsHVQIpXhWam-qhdXNn76aauUOSta8vZLtDiv5bT4s?ct=text/html;T:dependencies_digest"%gôË
+
+3‘~9KëiO6IÃ¥¶@Ø¡^ü^∞ñhrëè:idI"Eadac7da9a0ed8aaddd73bcf19f8c7de854f5189c756a9112194c32fe52061bb3;F:
+mtimel+äÛ@U

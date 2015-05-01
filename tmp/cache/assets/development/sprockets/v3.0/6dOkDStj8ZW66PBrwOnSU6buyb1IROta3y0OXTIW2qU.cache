@@ -1,0 +1,45 @@
+{:uriI"file:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html?type=text/html&id=2f042b5317a57dab72cd06e9f8d436c76d24c20594e109dabc36d54b0edbdabd:ET:load_pathI"ò/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts;F:filenameI"∞/Users/Ryan/Google Drive/NCICloudComputing/Advanced Client-side and User experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html;T:	nameI"angular/views/home;T:logical_pathI"angular/views/home.html;T:content_typeI"text/html;T:sourceI"‚<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Effects - addClass demo</title>
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+    <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+    <style>
+        .toggler { width: 500px; height: 200px; position: relative; }
+        #button { padding: .5em 1em; text-decoration: none; }
+        #effect { width: 240px;  padding: 1em;  font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
+        .newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.6em; }
+    </style>
+    <script>
+        $(function() {
+            $( "#button" ).click(function() {
+                $( "#effect" ).addClass( "newClass", 1000, callback );
+            });
+
+            function callback() {
+                setTimeout(function() {
+                    $( "#effect" ).removeClass( "newClass" );
+                }, 1500 );
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div class="toggler">
+    <div id="effect" class="ui-corner-all">
+        Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+    </div>
+</div>
+
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+
+
+</body>
+</html>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"»file-digest:///Users/Ryan/Google%20Drive/NCICloudComputing/Advanced%20Client-side%20and%20User%20experience/PROJECT_FILES/_ANGULAR_YELP/NEW/my_travel_app/app/assets/javascripts/angular/views/home.html;TT:charsetI"
+utf-8;F:digest"%í⁄Ù⁄:/⁄%T˝ù”éﬂk]ﬂê’/≈M…7÷D÷:lengthi‚:integrityI"Kni:///sha-256;ktoQ9No6L9olVP0QndOO32sBXd8SkNUvxU3JFTfWRNY?ct=text/html;T:dependencies_digest"%à”’–Ù]uh¸9SèØ'	ÅÄ#ùdÃjFêÜ´kÿ:idI"E2f042b5317a57dab72cd06e9f8d436c76d24c20594e109dabc36d54b0edbdabd;F:
+mtimel+°IAU
